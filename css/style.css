@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 2.4rem;
+    /*text-shadow: 3px 3px 6px #555;*/
+    color: #ddd;
+}
+h2 {
+    font-size: 2rem;
+    /*text-shadow: 2px 2px 5px #555;*/
+    color: #ddd;
+}
+h1, h2 {
+    font-family: 'Share Tech', sans-serif;
+    /*background-color: #38b6ff;*/
+    background-color: #203661;
+    display: inline-block;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 0.5rem
+}
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+ul {
+    padding-left: 1rem;
+}
+li {
+    list-style: none;
+    margin: 0.5rem 0 0.5rem 0;
+}
+p, li, table {
+    font-size: 1.6rem;
+}
+table {
+    margin-bottom: 1rem;
+}
+td {
+    padding: 3px 10px 3px 10px;
+}
+iframe {
+    border: none;
+}
+header {
+    text-align: center;
+    background-color: #D5E0F5;
+    display: flex;
+    align-items: center;
+}
+.container {
+    display: grid;
+    grid-template-areas: "ppal ppal ppal s1"
+                         "ppal ppal ppal s2";
+    background-color: #D5E0F5;
+    width: 100%;
+    padding: 1rem;
+}
+#container-contacto {
+    display: grid;
+    grid-template-areas: "ppal";
+    background-color: #D5E0F5;
+    width: 100%;
+    padding: 1rem;
+}
+.principal, .s1, .s2 {
+    padding: 0.5rem;
+}
+.principal {
+    grid-area: ppal;
+}
+.s1 {
+    grid-area: s1;
+}
+.s2 {
+    grid-area: s2;
+}
+.grid-col {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(4, auto) 1fr;
+    padding: 1rem;
+    row-gap: 1rem;
+    border: #203661 solid 1px;
+    height: 80%;
+}
+.grid-cli {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+    border: #203661 solid 1px;
+    height: 80%;
+}
+.grid-cli img {
+    width: 70%;
+    margin: auto;
+}
+.texto {
+    border: #203661 solid 1px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #D5E0F5;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+}
+/* Estilo para formulario */
+.formulario {
+    width: 80%;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.6rem;
+    justify-content: center;
+}
+label, input, textarea {
+    margin: 0.5rem 0 0.5rem 0;
+}
+/* Estilo para tabla */
+.desc {
+    text-align: left;
+    font-style: italic;
+}
+.mail {
+    text-align: right;
+}
+/* Estilos para distintos elementos */
+footer p {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.s1 a, .s2 a {
+    display: block;
+    font-size: 1.3rem;
+    background-color: #7D9CDB;
+    border-top-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    padding: 0.5rem;
+    max-width: 20rem;    
+}
+.mapa {
+    width: 90%;
+    height: 400px;
+    max-width: 600px;
+}
+/* Barra de navegacion */
+nav {
+    justify-content: space-around;
+    align-items: center;
+    flex: 75%;
+}
+@keyframes anim-nav {
+    from {
+        width: 15px;
+        font-size: 0.2rem;
+        border-radius: 0.5px;
+    }
+    to {
+        width: 150px;
+        font-size: 2rem;
+        border-radius: 5px;
+    }
+}
+nav a {
+    font-family: 'Oswald', sans-serif;
+    width: 150px;
+    text-align: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin: 0.2rem 0 0.2rem 0;
+    display: inline-block;
+    background-color: #7D9CDB;
+    border: #7D9CDB solid 1px;
+    font-size: 2rem;
+    border-radius: 5px;
+    transition: background-color 1s;
+    animation-name: anim-nav;
+    animation-duration: 1s;
+}
+nav a:hover:not(.active) {
+    background-image: none;
+    background-color: #D5E0F5;
+    border: #6078A8 solid 1px;
+}
+.active {
+    background-image: none;
+    background-color:#D5E0F5;
+    border: #6078A8 solid 1px;
+    pointer-events: none;
+    cursor: default;
+}
+/* Proporciones para los paneles en header y main */
+.flex25 {
+    flex: 25%;
+}
+.flex75 {
+    flex: 75%;
+}
+.logomain {
+    height: 100px;
+}
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-areas: "ppal"
+                             "s1"
+                             "s2";
+    }
+  }
+@media (max-width: 720px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+    header, footer {
+        flex-direction: column;
+    }
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+    .flex75, .flex25 {
+      flex: 100%;
+    }
+}
+
+/* Paleta de colores (Adobe Color) */
+.Paleta-LEC-1 { color: #4A5D82; }
+.Paleta-LEC-2 { color: #D5E0F5; }
+.Paleta-LEC-3 { color: #7D9CDB; }
+.Paleta-LEC-4 { color: #203661; }
+.Paleta-LEC-5 { color: #6078A8; }

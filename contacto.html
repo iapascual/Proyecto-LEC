@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC - Contacto</title>
+    <!-- Link al CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Links para google fonts, fuente oswald -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <!-- Script de FontAwesome-->
+    <script src="https://kit.fontawesome.com/b6142c3483.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Logo en el encabezado-->
+        <div class="flex25">
+            <img src="img/logo-lec.png" alt="LEC" class="logomain">
+        </div>
+        <!-- Barra de navegacion -->
+        <div class="flex75">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="ensayos.html">Ensayos</a>
+                <a href="calibraciones.html">Calibraciones</a>
+                <a href="equipamiento.html">Equipamiento</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="container-contacto">
+            <div class="principal">
+                <h1>Contáctenos</h1>
+                <div class="texto">
+                    <p>Nuestro horario de atención es de lunes a viernes de 08:00 a 17:00.</p>
+                    <h3><i class="fas fa-phone-alt"></i> Teléfonos</h3>
+                    <table>
+                        <tr>
+                            <td colspan=2 class="desc">Administración</td>
+                            <td class="mail">(5411) 4444-6666</td>
+                        </tr>
+                        <tr>
+                            <td colspan=2 class="desc">Area técnica</td>
+                        </tr>
+                        <tr>   
+                            <td></td>
+                            <td class="desc">Ensayos</td>
+                            <td class="mail">(5411) 4444-6667</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="desc">Calibraciones</td>
+                            <td class="mail">(5411) 4444-6668</td>
+                        </tr>
+                    </table>
+                    <h3><i class="far fa-envelope"></i> e-mail</h3>
+                    <table>
+                        <tr>
+                            <td class="desc">Administración</td>
+                            <td class="mail"><a href="mailto:administracion@lecsrl.com.ar">administracion@lecsrl.com.ar</a></td>
+                        </tr>
+                        <tr>
+                            <td class="desc">Ensayos</td>
+                            <td class="mail"><a href="mailto:ensayos@lecsrl.com.ar">ensayos@lecsrl.com.ar</a></td>
+                        </tr>
+                        <tr>
+                            <td class="desc">Calibraciones</td>
+                            <td class="mail"><a href="mailto:calibraciones@lecsrl.com.ar">calibraciones@lecsrl.com.ar</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <h1>Formulario de contacto</h1>
+                <div class="texto">
+                    <form action="https://formspree.io/f/mrgrbewz" method="POST" enctype="multipart/form-data" class="formulario">
+                        <label for="nombre">Nombre y apellido:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre..." required/>
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" name="empresa" id="empresa" placeholder="Ingresa tu empresa..." required/>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo..." required>
+                        <label for="servicio">Servicio:</label>
+                        <select name="servicio" id="servicio">
+                            <option value="seg-elec">Ensayos de seguridad eléctrica</option>
+                            <option value="eficiencia">Ensayos de eficiencia energética</option>
+                            <option value="seg-encen">Ensayos de encendedores</option>
+                            <option value="calib">Calibraciones</option>
+                            <option value="req-part">Requisito particular</option>
+                        </select>
+                        <label for="info">Información adicional:</label>
+                        <textarea name="info" id="info" cols="40" rows="5"></textarea>
+                        <input type="submit" value="Enviar"/>
+                    </form>
+                </div>
+                <h1>Ubicación</h1>
+                <div class="texto">
+                    <p>Nos encontramos en Avenida Entre Ríos 1638 (C1133AAR), C.A.B.A.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.070467735556!2d-58.39313118476968!3d-34.62765948045336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb230763d041%3A0x1bc191299cc48f16!2sAv.%20Entre%20R%C3%ADos%201638%2C%20C1133%20CABA!5e0!3m2!1ses-419!2sar!4v1619105928984!5m2!1ses-419!2sar" class="mapa"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p><i class="fas fa-phone-alt"></i> 4444-6660</p>
+        <p><i class="far fa-envelope"></i> lec@lecsrl.com.ar</p>
+        <p><i class="fas fa-map-marked"></i> Av. Entre Ríos 1638, C.A.B.A.</p>
+    </footer>
+</body>
+</html>

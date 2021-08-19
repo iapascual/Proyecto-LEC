@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC - Equipamiento</title>
+    <!-- Link al CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link para bootstrap (solo las partes para carousel)-->
+    <link rel="stylesheet" href="css/carousel.css">
+    <!-- Links para google fonts, fuente oswald -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <!-- Script de FontAwesome-->
+    <script src="https://kit.fontawesome.com/b6142c3483.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Logo en el encabezado-->
+        <div class="flex25">
+            <img src="img/logo-lec.png" alt="LEC" class="logomain">
+        </div>
+        <!-- Barra de navegacion -->
+        <div class="flex75">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="ensayos.html">Ensayos</a>
+                <a href="calibraciones.html">Calibraciones</a>
+                <a href="equipamiento.html" class="active">Equipamiento</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+     </header>
+     <main>
+         <!-- Pongo el carousel dentro de un div que voy a usar para centrar -->
+        <div id="div-carousel">
+            <h1>Nuestro equipamiento</h1>
+            <div class="texto">
+                <p>Estos son algunos de los instrumentos y equipos que utilizamos para realizar nuestras actividades.</p>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/multimetro.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">Multímetro de mano. Area Seguridad Eléctrica.</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/wattimetro.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">Analizador de potencia. Area Seguridad Eléctrica.</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/esfera.JPG" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">Esfera integradora. Area Eficiencia Energética.</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/estufa.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">Estufa de ventilación forzada. Area Seguridad de Encendedores.</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/termostatico.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">Baño termostático. Area Calibraciones.</div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><i class="fas fa-phone-alt"></i> 4444-6660</p>
+        <p><i class="far fa-envelope"></i> lec@lecsrl.com.ar</p>
+        <p><i class="fas fa-map-marked"></i> Av. Entre Ríos 1638, C.A.B.A.</p>
+    </footer>
+    <!-- Script JS de bootstrap -->
+    <script src="script/bootstrap.bundle.js"></script>
+</body>
+</html>
